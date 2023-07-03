@@ -2,7 +2,7 @@ import request from '@/utils/request'
 
 import type {
 
-    loginForm,
+    loginFormType,
 
     loginResult
 
@@ -20,7 +20,7 @@ enum API {
 
 }
 //登录接口
-export const reqLogin = (data: loginForm) =>
+export const login = (data: loginFormType) =>
  request.post<any, loginResult>(API.LOGIN_URL, data)
 //获取用户信息
 
