@@ -34,6 +34,7 @@
     <el-button type="warning" :icon="Star" circle />
     <el-button type="danger" :icon="Delete" circle />
   </el-row>
+  <a-b-c></a-b-c>
 </template>
 
 <script lang="ts" setup>
@@ -45,4 +46,6 @@ import {
   Search,
   Star,
 } from '@element-plus/icons-vue'
+import ABC from '@/components/ABC.vue'
+console.log(import.meta.env)
 </script>

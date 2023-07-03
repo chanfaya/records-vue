@@ -15,4 +15,17 @@ export default defineConfig({
     }),
     vue(),
   ],
+  resolve: {
+    alias: {
+      '@': '/src',
+    }
+  },
+  css: {
+    preprocessorOptions: {
+      less: {
+        javascriptEnabled: true,
+        additionalData: '@import "./src/styles/variable.less";',
+      },
+    },
+  },
 })
